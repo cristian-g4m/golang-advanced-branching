@@ -1,6 +1,6 @@
 package main
 
-type Vehicle interface{}
+type vehicle interface{}
 
 type car struct {
 	model       string
@@ -30,6 +30,7 @@ type Model struct {
 
 type feedbackResult struct {
 	feedbackTotal    int
+	feedbackPositive int
 	feedbackNegative int
 	feedbackNeutral  int
 }
@@ -38,7 +39,7 @@ type rating float32
 
 var vehicleResult = make(map[string]feedbackResult)
 
-var inventory Vehicle
+var inventory vehicle
 
 const (
 	extraPositive rating = 1.2
