@@ -38,8 +38,7 @@ type feedbackResult struct {
 type rating float32
 
 var vehicleResult map[string]feedbackResult
-
-var inventory vehicle
+var inventory []vehicle
 
 const (
 	extraPositive rating = 1.2
