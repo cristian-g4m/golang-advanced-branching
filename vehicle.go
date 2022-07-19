@@ -37,7 +37,7 @@ type feedbackResult struct {
 
 type rating float32
 
-var vehicleResult = make(map[string]feedbackResult)
+var vehicleResult map[string]feedbackResult
 
 var inventory vehicle
 
